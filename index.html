@@ -21,7 +21,128 @@
              margin:auto;
              background:white;
            }
-            
+
+         /*---------------------------CONTAINER FIRST SECTION MOBILE RESPONSIVENESS---------------------*/   
+        
+          @media screen and (min-width:577px)and (max-width:676px){
+              #menu-bar{
+                           display:block;
+                              
+                       }
+                #menu-bar section:last-child ul{
+                    font-size:6.5px;
+                    margin:auto;
+                }
+                #container{
+                    max-width:580px;
+                }
+                #banner section:first-child aside img{
+                    margin:30px 23px;
+                    width:535px;
+                }
+                #banner section:last-child span p:first-child{
+                    margin-left:-150px;
+                    padding-left:120px;
+                }
+                #content section:last-child{
+                  display:none;
+                                    
+                }
+                #content section:first-child{
+                  margin-left:6em !important;                              
+                }
+             } 
+             @media screen and (max-width:576px){
+                 #menu-bar{
+                              display:block;
+                              
+                          }
+                #menu-bar section:last-child ul{
+                  font-size:6.5px;
+                  margin:auto;
+                }
+                #container{
+                  max-width:490px;
+                }
+                #banner section:first-child aside img{
+                  margin:30px 23px;
+                  width:445px;
+                }
+                #banner section:last-child span p:first-child{
+                    margin-left:-150px;
+                    padding-left:40px;
+                }
+                #content section:last-child,section:nth-child(3){
+                  display:none;
+                                    
+                }
+                #content section{
+                  margin-left:4em !important;                              
+                }
+         }
+            @media screen and (max-width:576px){
+              #content section:nth-child(3){
+                  display:block;                  
+                }
+                #content section{
+                  margin-left:20px !important;
+                }
+            }
+           @media screen and (max-width:486px){
+                #menu-bar{
+                              display:block;
+                              
+                          }
+                #menu-bar section:last-child ul{
+                  font-size:6.5px;
+                  margin:auto;
+                }
+                #container{
+                  max-width:400px;
+                }
+                #banner section:first-child aside img{
+                  margin:30px 23px;
+                  width:350px;
+                }
+                #banner section:last-child span p:first-child{
+                    margin-left:-240px;
+                }
+                #content section:nth-child(3){
+                  display:none;                  
+                }
+                #content section:first-child{
+                  margin-left:3em !important;
+                }
+             } 
+         
+        
+         @media screen and (max-width:306px){
+                 #menu-bar{
+                              display:block;
+                              
+                          }
+                #menu-bar section:last-child ul{
+                  font-size:4px;
+                  margin:auto;
+                }
+                #container{
+                  max-width:270px;
+                }
+                #banner section:first-child aside img{
+                  margin:30px 20px;
+                  width:210px;
+                }
+                #banner section:last-child span{
+                  margin-left:-230px;
+                  
+                }
+                #content section:nth-child(2){
+                  display:none;                                   
+                }
+                #content section:first-child{
+                  margin-left:6.5em !important;                 
+                }
+         }
 #menu-bar section{
                    display:flex;
                    padding:20px;
@@ -55,6 +176,10 @@
           background:#f5f6f8f6;
           max-width:652px;
           margin:auto;
+         
+       }
+       #banner section:first-child{
+         max-height:16em;
        }
 #banner section:first-child{
                              background:rgb(255, 248, 248);
