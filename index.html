@@ -10,126 +10,208 @@
                margin:0;
                padding:0;
             }
-
-        #container{
-                    border:1px solid rgb(208, 228, 235);
-                    max-width: 652px;
-                    margin:auto;
-                    
-                  }
-          #menu-bar{
+#container{
+             border:1px solid rgb(208, 228, 235);
+             max-width: 652px;
+             margin:auto;                    
+          }
+ #menu-bar{
              display:flex;
              max-width:652px;
              margin:auto;
              background:white;
            }
             
-    #menu-bar section{
-                       display:flex;
-                       padding:20px;
-                       font-family:sans-serif;
-                       font-size:10px;
-                       margin:auto;
-                     }
- 
-    #menu-bar section:first-child aside:first-child{
-                                                     color:blue;
-                                                   }     
-    #menu-bar section:last-child{
-                                  
-                                  margin-right:10px;
+#menu-bar section{
+                   display:flex;
+                   padding:20px;
+                   font-family:sans-serif;
+                   font-size:10px;
+                   margin:auto;
+                 } 
+#menu-bar section:first-child aside:first-child{
+                                                 color:blue;
+                                               }     
+#menu-bar section:last-child{
+                              margin-right:10px;
+                            }
+#menu-bar section:last-child ul{
+                                  list-style-type:none;
+                               }
+#menu-bar section:last-child a{
+                                text-decoration:none;
+                                color:black;
+                              }
+#menu-bar section:last-child li{
+                                display:inline;
+                                margin-right:10px;
+                                padding:10px 5px;
+                               }   
+#menu-bar section:last-child li:hover{
+                                       color:blue;
+                                       cursor:pointer;
+                                     }  
+#banner{
+          background:#f5f6f8f6;
+          max-width:652px;
+          margin:auto;
+       }
+#banner section:first-child{
+                             background:rgb(255, 248, 248);
+                             max-width:652px;
+                           }
+#banner section:first-child img{
+                                  margin:30px 50px;
+                                  width:555px;
+                                  height:200px;
                                 }
-    #menu-bar section:last-child ul{
-                                     list-style-type:none;
-                                   }
-    #menu-bar section:last-child a{
-                                     text-decoration:none;
-                                     color:black;
-                                  }
-    #menu-bar section:last-child li{
-                                     display:inline;
-                                     margin-right:10px;
-                                     padding:10px 5px;
-                                  }   
-     #menu-bar section:last-child li:hover{
-                                            color:blue;
-                                            cursor:pointer;
-                                            
-                                          }  
-               #banner{
-                         background:#f5f6f8f6;
-                         max-width:652px;
-                         margin:auto;
-                         
-                       }
-    #banner section:first-child{
-                                 background:rgb(255, 248, 248);
-                                 max-width:652px;
-                                 
-                                }
-        #banner section:first-child img{
-                                         margin:30px 50px;
-                                         width:555px;
-                                         height:200px;
-                                       }
-              
-          #banner section:last-child span{
-                                           display:inline-flex;
-                                           margin:25px 200px 15px;
-                                         }
-          #banner section:last-child span p:first-child{ 
-                                                           color:blue;
-                                                           font-family:sans-serif;
-                                                           font-size:13px;
-                                                           margin-right:10px;
-                                                        } 
-      #banner section:last-child span p:last-child{
+#banner section:last-child span{
+                                display:inline-flex;
+                                margin:25px 200px 15px;
+                               }
+#banner section:last-child span p:first-child{ 
+                                                color:blue;
+                                                font-family:sans-serif;
+                                                font-size:13px;
+                                                margin-right:10px;
+                                             } 
+ #banner section:last-child span p:last-child{
                                                      
-                                                     font-family:verdana;
-                                                     font-size:13px;
-                                                     margin-right:-70px;
-                                                     
-                                                   }
-                          #content{
-                                    display:flex;
-                                    background:white;
-                                  }
-                          #content section{
-                                             margin:20px 0px 20px 20px;
-                                             font-size:10px;
-                                             max-width:100px;
-                                             background:rgb(236, 232, 232);
-                                             padding:20px;
-                                            
-                                          }
-                          #content section aside{
-                                                  flex:1;   
+                                              font-family:verdana;
+                                              font-size:13px;
+                                              margin-right:-70px;
+                                             }
+#content{
+          display:flex;
+          background:white;
+        }
+#content section{
+                    margin:20px 0px 20px 20px;
+                    font-size:10px;
+                    max-width:100px;
+                    background:rgb(236, 232, 232);
+                    padding:20px 20px 0px;
+                  
+                }
+#content section aside{
+                        flex:1;   
+                      }
+
+  /*-----------------------------CONTENT FOURCHLD SECTION STYLING-------------------------*/
+
+#content section:first-child aside:first-child{
+                                                margin-bottom:20px; 
+                                              }
+#content section:first-child aside:first-child h1{
+                                                  font-family:50px;
+                                                  margin-left:8px;
+                                                 }
+#content section:first-child aside:first-child i{
+                                                  margin:5px 0px 5px 40px;
                                                 }
-                         #content section:first-child aside:first-child{
-                                                                         margin-bottom:20px; 
-                                                                       }
-                         #content section:first-child aside:first-child h1{
-                                                                            font-family:50px;
-                                                                            margin-left:8px;
-                                                                          }
-                        #content section:first-child aside:first-child i{
-                                                                           margin:5px 0px 5px 40px;
-                                                                        }
-                            #content section:first-child aside:first-child p{
-                                                                                font-family:verdana;
-                                                                                font-size:8px;
-                                                                            }
-                           #content section:first-child aside:last-child a{
-                                                                              text-decoration:none; 
-                                                                              color:white;                                                                                                                                                                                                   
-                                                                          }
-                          #content section:first-child aside:last-child span{
-                                                                                background:rgb(156, 205, 238);   
-                                                                                padding:5px;
-                                                                                display:inline-flex;
-                                                                                margin-top:-30px;
-                                                                                margin-left:15px;
-                                                                             }
+#content section:first-child aside:first-child p{
+                                                      font-family:verdana;
+                                                      font-size:8px;
+                                                  }
+ #content section:first-child aside:last-child a{
+                                                    text-decoration:none; 
+                                                    color:white; 
+                                                     margin-left:30px;                                                                                                                                                                                              
+                                                }
+#content section:first-child aside:last-child span{
+                                                      background:rgb(156, 205, 238);   
+                                                      padding:5px 5px 5px 15px;
+                                                      display:inline-flex;
+                                                       width:120px;
+                                                      margin-left:-20px;
+                                                      
+                                                  }
+
+  /*-----------------------------CONTENT SECONDCHLD SECTION STYLING-------------------------*/
+#content section:nth-child(2) aside:first-child{
+                                                margin-bottom:20px; 
+                                              }
+#content section:nth-child(2) aside:first-child h1{
+                                                  font-family:50px;
+                                                  margin-left:8px;
+                                                 }
+#content section:nth-child(2) aside:first-child i{
+                                                  margin:5px 0px 5px 40px;
+                                                }
+#content section:nth-child(2) aside:first-child p{
+                                                      font-family:verdana;
+                                                      font-size:8px;
+                                                  }
+ #content section:nth-child(2) aside:last-child a{
+                                                    text-decoration:none; 
+                                                    color:white; 
+                                                     margin-left:30px;                                                                                                                                                                                              
+                                                }
+#content section:nth-child(2) aside:last-child span{
+                                                      background:rgb(156, 205, 238);   
+                                                      padding:5px 5px 5px 15px;
+                                                      display:inline-flex;
+                                                       width:120px;
+                                                      margin-left:-20px;
+                                                      
+                                                  }
+ /*-----------------------------CONTENT THIRDCHLD SECTION STYLING-------------------------*/
+ #content section:nth-child(3) aside:first-child{
+                                                margin-bottom:20px; 
+                                              }
+#content section:nth-child(3) aside:first-child h1{
+                                                  font-family:50px;
+                                                  margin-left:8px;
+                                                 }
+#content section:nth-child(3) aside:first-child i{
+                                                  margin:5px 0px 5px 40px;
+                                                }
+#content section:nth-child(3) aside:first-child p{
+                                                      font-family:verdana;
+                                                      font-size:8px;
+                                                  }
+ #content section:nth-child(3) aside:last-child a{
+                                                    text-decoration:none; 
+                                                    color:white; 
+                                                     margin-left:30px;                                                                                                                                                                                              
+                                                }
+#content section:nth-child(3) aside:last-child span{
+                                                      background:rgb(156, 205, 238);   
+                                                      padding:5px 5px 5px 15px;
+                                                      display:inline-flex;
+                                                       width:120px;
+                                                      margin-left:-20px;
+                                                      
+                                                  }
+ /*-----------------------------CONTENT FOURCHLD SECTION STYLING-------------------------*/
+ #content section:nth-child(4) aside:first-child{
+                                                margin-bottom:20px; 
+                                              }
+#content section:nth-child(4) aside:first-child h1{
+                                                  font-family:50px;
+                                                  margin-left:8px;
+                                                 }
+#content section:nth-child(4) aside:first-child i{
+                                                  margin:5px 0px 5px 40px;
+                                                }
+#content section:nth-child(4) aside:first-child p{
+                                                      font-family:verdana;
+                                                      font-size:8px;
+                                                  }
+ #content section:nth-child(4) aside:last-child a{
+                                                    text-decoration:none; 
+                                                    color:white; 
+                                                     margin-left:30px;                                                                                                                                                                                              
+                                                }
+#content section:nth-child(4) aside:last-child span{
+                                                      background:rgb(156, 205, 238);   
+                                                      padding:5px 5px 5px 15px;
+                                                      display:inline-flex;
+                                                       width:120px;
+                                                      margin-left:-20px;
+                                                      
+                                                  }
+
     </style>
 </head>
 <body>
@@ -194,36 +276,62 @@
                         <aside>
                               <h1>Mordern style</h1>
                               <i class="fa fa-leaf"></i>
-                              <p>Lorem, ipsum dolor sit<br> amet consectetur adipisicing elit.
-                                Suscipit blanditiis .
+                              <p>
+                                <span style="margin-left:25px">
+                                  Lorem, ipsum
+                                </span>
+                                      <br> dolor sit amet consecte<wbr>
+                                <span style="margin-left:15px">
+                                            tur adipisicing elit.
+                                </span>
                               </p>
                         </aside>
                         <aside>
-                              <a href="#">Learn More</a>   
+                              <span>
+                                    <a href="#">Learn More</a> 
+                              </span>
+                                
                         </aside>
               </section>
               <section>
                       <aside>
                             <h1>Customizable</h1>
                             <i class="fa fa-edit"></i>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                              Suscipit blanditiis.
+                            <p> 
+                                <span style="margin-left:25px">
+                                  Lorem, ipsum
+                                </span>
+                                      <br> dolor sit amet consecte<wbr>
+                                <span style="margin-left:15px">
+                                            tur adipisicing elit.
+                                </span>
                             </p>
                      </aside>
                       <aside>
-                            <a href="#">Learn More</a>   
+                              <span>
+                                <a href="#">Learn More</a>
+                             </span>                             
                       </aside>
               </section>
               <section>
                       <aside>
                             <h1>Valid HTML5</h1>
                             <i class="fa fa-code"></i>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                              Suscipit blanditiis.
+                            <p> 
+                                  <span style="margin-left:25px">
+                                    Lorem, ipsum
+                                  </span>
+                                        <br> dolor sit amet consecte<wbr>
+                                  <span style="margin-left:15px">
+                                              tur adipisicing elit.
+                                  </span>
                             </p>
                      </aside>
                       <aside>
-                            <a href="#">Learn More</a>   
+                             <span>
+                                   <a href="#">Learn More</a> 
+                             </span>
+                              
                       </aside>
               </section>
             </div>
