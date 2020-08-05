@@ -1,466 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Repository</title>
-    <link rel="stylesheet" href="fa_dir\css\all.css">
-    <style>
-           *{
-               margin:0;
-               padding:0;
-            }
-#container{
-             border:1px solid rgb(208, 228, 235);
-             max-width: 652px;
-             margin:auto;                    
-          }
- #menu-bar{
-             display:flex;
-             max-width:652px;
-             margin:auto;
-             background:white;
-           }
+<html>
+      <head>
+             <title>
+                  HOME PAGE
+             </title>
+             <meta charset="utf-8">
+             <meta name="viewport"content="width=device-width initial-scale=1.0">
+             <link rel="stylesheet" href="fa_dir\css\all.css">
+             <style>
+                  *{
+                    margin:0;
+                    padding:0;                    
+                  }
 
-         /*---------------------------CONTAINER FIRST SECTION MOBILE RESPONSIVENESS---------------------*/   
-        
-          @media screen and (min-width:577px)and (max-width:676px){
-              #menu-bar{
-                           display:block;
-                              
-                       }
-                #menu-bar section:last-child ul{
-                    font-size:6.5px;
-                    margin:auto;
+            /*------------------------MENU-BAR STYLING----------------*/
+
+                  .menu-bar{
+                    background:white;  
+                    display:flex;
+                    font-family:"times new roman";                  
+                  }                 
+                  .menu-bar section:first-child{
+                    flex:3;
+                  } 
+                  .menu-bar section:first-child aside{
+                    padding:10px 20px 20px 20px;
+                  } 
+                  .menu-bar section:last-child{
+                    flex:1;
+                    margin:10px 20px;
+                  }  
+                  .menu-bar section:last-child ul{
+                    list-style:none;
+                    display:inline-flex;                    
+                  }
+                  .menu-bar section:last-child ul li{
+                    padding:10px;
+                  }
+                  .menu-bar section:last-child ul li a{
+                    text-decoration:none;
+                    color:black;
+                  }
+                  .menu-bar section:last-child ul li a:hover{
+                    color:rgb(54, 145, 231);
+                  }
+                /*-------------MOBILE RESPONSIVENESS FOR THE MENU-BAR---------------*/
+                @media screen and (max-width:440px){
+                  .menu-bar{                    
+                    display:block;
+                    font-size:10px;                               
+                  }
+                  .menu-bar section:last-child{
+                    margin-top:-10px;
+                  }                  
                 }
-                #container{
-                    max-width:580px;
+                @media screen and (max-width:559px){
+                  .menu-bar section:last-child{               
+                    font-size:10px;                               
+                  }
                 }
-                #banner section:first-child aside img{
-                    margin:30px 23px;
-                    width:535px;
+
+                /*---------------------------STYLING FOR THE BANNER-------------*/
+
+                .banner{
+                  background:rgba(255, 252, 252, 0.856);
                 }
-                #banner section:last-child span p:first-child{
-                    margin-left:-150px;
-                    padding-left:120px;
-                }
-                #content section:last-child{
-                  display:none;
-                                    
-                }
-                #content section:first-child{
-                  margin-left:6em !important;                              
-                }
-             } 
-             @media screen and (max-width:576px){
-                 #menu-bar{
-                              display:block;
-                              
-                          }
-                #menu-bar section:last-child ul{
-                  font-size:6.5px;
+                .banner aside{
+                  max-width:92.6%;
                   margin:auto;
+                 
                 }
-                #container{
-                  max-width:490px;
+                .banner aside img{
+                  margin-top:1.5rem;
+                  width:74rem;
+                  height:15rem;
+                  margin:1.5rem 0 1.5rem;
                 }
-                #banner section:first-child aside img{
-                  margin:30px 23px;
-                  width:445px;
-                }
-                #banner section:last-child span p:first-child{
-                    margin-left:-150px;
-                    padding-left:40px;
-                }
-                #content section:last-child,section:nth-child(3){
-                  display:none;
-                                    
-                }
-                #content section{
-                  margin-left:4em !important;                              
-                }
-         }
-            @media screen and (max-width:576px){
-              #content section:nth-child(3){
-                  display:block;                  
-                }
-                #content section{
-                  margin-left:20px !important;
-                }
-            }
-           @media screen and (max-width:486px){
-                #menu-bar{
-                              display:block;
-                              
-                          }
-                #menu-bar section:last-child ul{
-                  font-size:6.5px;
-                  margin:auto;
-                }
-                #container{
-                  max-width:400px;
-                }
-                #banner section:first-child aside img{
-                  margin:30px 23px;
-                  width:350px;
-                }
-                #banner section:last-child span p:first-child{
-                    margin-left:-240px;
-                }
-                #content section:nth-child(3){
-                  display:none;                  
-                }
-                #content section:first-child{
-                  margin-left:3em !important;
-                }
-             } 
-         
-        
-         @media screen and (max-width:306px){
-                 #menu-bar{
-                              display:block;
-                              
-                          }
-                #menu-bar section:last-child ul{
-                  font-size:4px;
-                  margin:auto;
-                }
-                #container{
-                  max-width:270px;
-                }
-                #banner section:first-child aside img{
-                  margin:30px 20px;
-                  width:210px;
-                }
-                #banner section:last-child span{
-                  margin-left:-230px;
+
+                /*-------------MOBILE RESPONSIVENESS FOR THE BANNER---------------*/                               
                   
+                @media screen and (max-width:768px){                 
+                 .banner aside img{                   
+                   width:44.5rem !important;
+                 }
+                } 
+                @media screen and (max-width:360px){                 
+                 .banner aside img{                   
+                   width:20rem !important;
+                   margin-left:5px;
+                   margin-left:5px;
+                 }
                 }
-                #content section:nth-child(2){
-                  display:none;                                   
+                @media screen and (max-width:375px){                 
+                 .banner aside img{                   
+                   width:20rem !important;
+                   margin-left:10px !important;                   
+                 }
+                }                           
+                
+                /*---------------------------STYLING FOR THE BANNER-FOOTER-------------*/
+
+                .banner-footer{
+                  text-align:center;
+                  font-family:"times new roman";
+                  background:rgb(245, 241, 241);
+                  padding:2rem 0rem;
                 }
-                #content section:first-child{
-                  margin-left:6.5em !important;                 
+
+                 /*---------------------------STYLING FOR CONTENT-------------*/
+
+                 .content{
+                   display:inline-flex;
+                   margin-left:20rem;
+                 }
+                 .content section{
+                   max-width:95%; background-color:rgb(245, 241, 241);
+                   margin:30px 10px 30px;                   
+                 }
+                .content section aside{
+                  padding:10px;
+                  text-align:center;                 
                 }
-         }
-#menu-bar section{
-                   display:flex;
-                   padding:20px;
-                   font-family:sans-serif;
-                   font-size:10px;
-                   margin:auto;
-                 } 
-#menu-bar section:first-child aside:first-child{
-                                                 color:blue;
-                                               }     
-#menu-bar section:last-child{
-                              margin-right:10px;
-                            }
-#menu-bar section:last-child ul{
-                                  list-style-type:none;
-                               }
-#menu-bar section:last-child a{
-                                text-decoration:none;
-                                color:black;
-                              }
-#menu-bar section:last-child li{
-                                display:inline;
-                                margin-right:10px;
-                                padding:10px 5px;
-                               }   
-#menu-bar section:last-child li:hover{
-                                       color:blue;
-                                       cursor:pointer;
-                                     }  
-#banner{
-          background:#f5f6f8f6;
-          max-width:652px;
-          margin:auto;
-         
-       }
-       #banner section:first-child{
-         max-height:16em;
-       }
-#banner section:first-child{
-                             background:rgb(255, 248, 248);
-                             max-width:652px;
-                           }
-#banner section:first-child img{
-                                  margin:30px 50px;
-                                  width:555px;
-                                  height:200px;
-                                }
-#banner section:last-child span{
-                                display:inline-flex;
-                                margin:25px 200px 15px;
-                               }
-#banner section:last-child span p:first-child{ 
-                                                color:blue;
-                                                font-family:sans-serif;
-                                                font-size:13px;
-                                                margin-right:10px;
-                                             } 
- #banner section:last-child span p:last-child{
-                                                     
-                                              font-family:verdana;
-                                              font-size:13px;
-                                              margin-right:-70px;
-                                             }
-#content{
-          display:flex;
-          background:white;
-        }
-#content section{
-                    margin:20px 0px 20px 20px;
-                    font-size:10px;
-                    max-width:100px;
-                    background:rgb(236, 232, 232);
-                    padding:20px 20px 0px;
-                  
+                .content section aside footer{
+                  background:rgb(54, 145, 231);
+                  padding:5px;
+                  margin:0px -10px -10px;
                 }
-#content section aside{
-                        flex:1;   
-                      }
+                .content section aside footer a{
+                  text-decoration: none;
+                }
+                 /*-------------MOBILE RESPONSIVENESS FOR THE BANNER---------------*/  
 
-  /*-----------------------------CONTENT FOURCHLD SECTION STYLING-------------------------*/
-
-#content section:first-child aside:first-child{
-                                                margin-bottom:20px; 
-                                              }
-#content section:first-child aside:first-child h1{
-                                                  font-family:50px;
-                                                  margin-left:8px;
-                                                 }
-#content section:first-child aside:first-child i{
-                                                  margin:5px 0px 5px 40px;
-                                                }
-#content section:first-child aside:first-child p{
-                                                      font-family:verdana;
-                                                      font-size:8px;
-                                                  }
- #content section:first-child aside:last-child a{
-                                                    text-decoration:none; 
-                                                    color:white; 
-                                                     margin-left:30px;                                                                                                                                                                                              
-                                                }
-#content section:first-child aside:last-child span{
-                                                      background:rgb(156, 205, 238);   
-                                                      padding:5px 5px 5px 15px;
-                                                      display:inline-flex;
-                                                       width:120px;
-                                                      margin-left:-20px;
-                                                      
-                                                  }
-
-  /*-----------------------------CONTENT SECONDCHLD SECTION STYLING-------------------------*/
-#content section:nth-child(2) aside:first-child{
-                                                margin-bottom:20px; 
-                                              }
-#content section:nth-child(2) aside:first-child h1{
-                                                  font-family:50px;
-                                                  margin-left:8px;
-                                                 }
-#content section:nth-child(2) aside:first-child i{
-                                                  margin:5px 0px 5px 40px;
-                                                }
-#content section:nth-child(2) aside:first-child p{
-                                                      font-family:verdana;
-                                                      font-size:8px;
-                                                  }
- #content section:nth-child(2) aside:last-child a{
-                                                    text-decoration:none; 
-                                                    color:white; 
-                                                     margin-left:30px;                                                                                                                                                                                              
-                                                }
-#content section:nth-child(2) aside:last-child span{
-                                                      background:rgb(156, 205, 238);   
-                                                      padding:5px 5px 5px 15px;
-                                                      display:inline-flex;
-                                                       width:120px;
-                                                      margin-left:-20px;
-                                                      
-                                                  }
- /*-----------------------------CONTENT THIRDCHLD SECTION STYLING-------------------------*/
- #content section:nth-child(3) aside:first-child{
-                                                margin-bottom:20px; 
-                                              }
-#content section:nth-child(3) aside:first-child h1{
-                                                  font-family:50px;
-                                                  margin-left:8px;
-                                                 }
-#content section:nth-child(3) aside:first-child i{
-                                                  margin:5px 0px 5px 40px;
-                                                }
-#content section:nth-child(3) aside:first-child p{
-                                                      font-family:verdana;
-                                                      font-size:8px;
-                                                  }
- #content section:nth-child(3) aside:last-child a{
-                                                    text-decoration:none; 
-                                                    color:white; 
-                                                     margin-left:30px;                                                                                                                                                                                              
-                                                }
-#content section:nth-child(3) aside:last-child span{
-                                                      background:rgb(156, 205, 238);   
-                                                      padding:5px 5px 5px 15px;
-                                                      display:inline-flex;
-                                                       width:120px;
-                                                      margin-left:-20px;
-                                                      
-                                                  }
- /*-----------------------------CONTENT FOURCHLD SECTION STYLING-------------------------*/
- #content section:nth-child(4) aside:first-child{
-                                                margin-bottom:20px; 
-                                              }
-#content section:nth-child(4) aside:first-child h1{
-                                                  font-family:50px;
-                                                  margin-left:8px;
-                                                 }
-#content section:nth-child(4) aside:first-child i{
-                                                  margin:5px 0px 5px 40px;
-                                                }
-#content section:nth-child(4) aside:first-child p{
-                                                      font-family:verdana;
-                                                      font-size:8px;
-                                                  }
- #content section:nth-child(4) aside:last-child a{
-                                                    text-decoration:none; 
-                                                    color:white; 
-                                                     margin-left:30px;                                                                                                                                                                                              
-                                                }
-#content section:nth-child(4) aside:last-child span{
-                                                      background:rgb(156, 205, 238);   
-                                                      padding:5px 5px 5px 15px;
-                                                      display:inline-flex;
-                                                       width:120px;
-                                                      margin-left:-20px;
-                                                      
-                                                  }
-
-    </style>
-</head>
-<body>
-    <div id="container">
-            <div id="menu-bar">
-                <section>
-                    <aside>
-                        <span>
-                                <b> M</b>
+                 @media screen and (max-width:768px){
+                  .content{
+                   margin-left:2rem;
+                 }
+                 }
+                 @media screen and (max-width:360px){
+                  .content{
+                    display:block;
+                   margin:0rem 1rem;
+                 }
+                 }
+                 @media screen and (max-width:375px){
+                  .content{
+                    display:block;
+                   margin:0rem 1rem !important;
+                 }
+                 }
+                 @media screen and (max-width:414px){
+                  .content{
+                    display:block;
+                   margin:0rem 0.5rem !important;
+                 }
+                 }
+                 @media screen and (max-width:800px){
+                  .content{                
+                   margin-left:3rem;
+                 }
+                 }
+                 
+             </style>
+             <body>
+                   <div class="menu-bar">
+                            <section>
+                                  <aside>
+                                        <span style="color:rgb(54, 145, 231);">M</span>ODERNA  
+                                  </aside>     
+                            </section>
+                            <section>
+                                    <ul>
+                                      <li><a href="#">HOME</a></li>
+                                      <li><a href="#">FEATURES</a></li>
+                                      <li><a href="#">PORTFOLIO</a></li>
+                                      <li><a href="#">BLOG</a></li>
+                                      <li><a href="#">CONTACT</a></li>
+                                    </ul>                             
+                            </section>
+                  </div>
+                  <div class="banner">
+                         <aside>
+                            <img src="images\humanbg2.jpg" alt="logo">
+                          </aside>                          
+                  </div>
+                  <div class="banner-footer">
+                        <span style="color:rgb(54, 145, 231);">
+                               Morderna
                         </span>
-                    </aside>
-                    <aside>
-                        <span>
-                                <b> ODERNA</b>
-                        </span>
-                    </aside>
-                </section>
-                <section>
-                    <ul>
-                        <a href="#"><li><b>HOME</b></li></a>
-                        <a href="#"><li><b>FEATURES</b></li></a>
-                        <a href="#"><li><b>PORTFOLIO</b></li></a>
-                        <a href="#"><li><b>BLOG</b></li></a>
-                        <a href="#"> <li><b>CONTACT</b></li></a>
-                    </ul>
-                </section>
-            </div>
-            <div id="banner">
-                <section>
-                        <aside> <img src="images/humanbg2.jpg"></img></aside>
-                </section>
-                <section>
-                            <span>
-                                <p><b>Moderna</b></p>
-                                <p><b>WordPress Business Theme</b></p>
-                            </span>
-                </section>
-            </div>
-            <div id="content">
-              <section>
-                       <aside>
-                            <h1>fully responsive</h1>
-                            <i class="fa fa-laptop"></i>
-                            <p>
-                                  <span style="margin-left:25px">
-                                    Lorem, ipsum
-                                  </span>
-                                        <br> dolor sit amet consecte<wbr>
-                                  <span style="margin-left:15px">
-                                              tur adipisicing elit.
-                                  </span>
-                              
-                            </p>
-                          </aside>
-                          <aside>
-                               <span>
-                                      <a href="#"> Learn More</a>
-                                </span> 
-                          </aside>
-              </section>
-              <section>
-                        <aside>
-                              <h1>Mordern style</h1>
-                              <i class="fa fa-leaf"></i>
-                              <p>
-                                <span style="margin-left:25px">
-                                  Lorem, ipsum
-                                </span>
-                                      <br> dolor sit amet consecte<wbr>
-                                <span style="margin-left:15px">
-                                            tur adipisicing elit.
-                                </span>
-                              </p>
-                        </aside>
-                        <aside>
-                              <span>
-                                    <a href="#">Learn More</a> 
-                              </span>
-                                
-                        </aside>
-              </section>
-              <section>
-                      <aside>
-                            <h1>Customizable</h1>
-                            <i class="fa fa-edit"></i>
-                            <p> 
-                                <span style="margin-left:25px">
-                                  Lorem, ipsum
-                                </span>
-                                      <br> dolor sit amet consecte<wbr>
-                                <span style="margin-left:15px">
-                                            tur adipisicing elit.
-                                </span>
-                            </p>
-                     </aside>
-                      <aside>
-                              <span>
-                                <a href="#">Learn More</a>
-                             </span>                             
-                      </aside>
-              </section>
-              <section>
-                      <aside>
-                            <h1>Valid HTML5</h1>
-                            <i class="fa fa-code"></i>
-                            <p> 
-                                  <span style="margin-left:25px">
-                                    Lorem, ipsum
-                                  </span>
-                                        <br> dolor sit amet consecte<wbr>
-                                  <span style="margin-left:15px">
-                                              tur adipisicing elit.
-                                  </span>
-                            </p>
-                     </aside>
-                      <aside>
-                             <span>
-                                   <a href="#">Learn More</a> 
-                             </span>
-                              
-                      </aside>
-              </section>
-            </div>
-    </div>
+                        WordPress Business Theme
+                  </div>
+                  <div class="content">
+                        <section>
+                              <aside> 
+                                    <h1>fully responsive</h1>
+                              </aside>
+                              <aside>
+                                  <i class="fa fa-laptop"></i>
+                              </aside>
+                              <aside>
+                                Lorem ipsum <br>dolor sit amet consec<br>tetur adipi elit. 
+                              </aside>
+                              <aside>
+                                  <footer>
+                                         <a href="#">Learn More</a>
+                                  </footer>
+                              </aside>
+                        </section>
+                        <section>
+                              <aside> 
+                                    <h1>Modern Style</h1>
+                              </aside>
+                              <aside>
+                                  <i class="fa fa-leaf"></i>
+                              </aside>
+                              <aside>
+                                Lorem ipsum <br>dolor sit amet consec<br>tetur adipi elit. 
+                              </aside>
+                              <aside>
+                                  <footer>
+                                        <a href="#">Learn More</a>
+                                  </footer> 
+                              </aside>
+                    </section>
+                    <section>
+                              <aside> 
+                                    <h1>Customizable</h1>
+                              </aside>
+                              <aside>
+                                  <i class="fa fa-edit"></i>
+                              </aside>
+                              <aside>
+                                Lorem ipsum <br>dolor sit amet consec<br>tetur adipi elit. 
+                              </aside>
+                              <aside>
+                                    <footer>
+                                           <a href="#">Learn More</a>
+                                    </footer>  
+                              </aside>
+                    </section>
+                    <section>
+                              <aside> 
+                                    <h1>Valid HTML5</h1>
+                              </aside>
+                              <aside>
+                                  <i class="fa fa-code"></i>
+                              </aside>
+                              <aside>
+                                Lorem ipsum <br>dolor sit amet consec<br>tetur adipi elit. 
+                              </aside>
+                              <aside>
+                                  <footer>
+                                        <a href="#">Learn More</a>
+                                  </footer>  
+                              </aside>
+                     </section>
+                  </div>      
+                   
 
+             </body>
+      </head>
 
-</body>
+</html>
