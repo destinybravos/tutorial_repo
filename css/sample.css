@@ -1,0 +1,106 @@
+#topnav a{
+    color: #cecece;
+    padding: 0.3rem 0.7rem;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+#topnav a:hover{
+    color: #f0efef;
+}
+
+#topnav a.nav-link{
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#topnav .dropdown{
+    display: inline-block !important;
+    background-color: #343a40;
+}
+#topnav .dropdown a{
+    font-size: 0.75rem;
+    color: white;
+    font-weight: bold;
+}
+#topnav li.nav-item:last-child, #topnav .dropdown a{
+    background-color: #454f58;
+}
+
+@media screen and (max-width:992px){
+    #topnav .dropdown{
+        display: none !important;
+    }
+}
+
+/* TOP HEADER */
+header{
+    background-color: white;
+    font-size: 0.9rem;
+}
+header .container{
+    padding: 15px 0;
+}
+#sm_nav{
+    text-align: right;
+}
+#sm_nav > div{
+    display: inline-block;
+    text-align: left;
+    padding: 0 15px;
+    vertical-align: middle;
+}
+#sm_nav > div:not(:last-child){
+    border-right: thin solid #79838b8f;
+}
+#sm_nav .col-md-4:not(:last-child){
+    text-align: left;
+}
+@media screen and (max-width:768px){
+    #sm_nav > div:not(:last-child){
+        display: none;
+    }
+}
+@media screen and (max-width:560px){
+    .h-sd{
+        display: none;
+    }
+}
+
+/* NAVBAR */
+.navbar-nav{
+    width: 100%;
+}
+.navbar-nav .nav-link{
+    color: white !important;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 1rem !important;
+}
+.navbar-nav .nav-item:last-child{
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 8px 18px;
+}
+#srch_box{
+    background-color: transparent;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: thin solid white;
+    color: white;
+    font-size: 0.8rem;
+    width: auto;
+    flex: 7;
+}
+nav .input-group-append{
+    flex: 1;
+}
+nav .input-group-text{
+    background-color: transparent;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: thin solid white;
+    color: white;
+    border-radius: 0;
+}
