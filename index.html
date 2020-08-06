@@ -110,12 +110,16 @@
                  /*---------------------------STYLING FOR CONTENT-------------*/
 
                  .content{
-                   display:inline-flex;
-                   margin-left:20rem;
+                   display:block;
+                   margin: auto;
+                   text-align: center;
                  }
                  .content section{
-                   max-width:95%; background-color:rgb(245, 241, 241);
-                   margin:30px 10px 30px;                   
+                   width: 21%;
+                   background-color:rgb(245, 241, 241);
+                   margin:30px 10px 30px;
+                   display: inline-block;    
+                   vertical-align: top;               
                  }
                 .content section aside{
                   padding:10px;
@@ -131,33 +135,15 @@
                 }
                  /*-------------MOBILE RESPONSIVENESS FOR THE BANNER---------------*/  
 
-                 @media screen and (max-width:768px){
-                  .content{
-                   margin-left:2rem;
+                 @media screen and (max-width:768px){ 
+                  .content section{
+                    width: 45%;               
+                  }
                  }
-                 }
-                 @media screen and (max-width:360px){
-                  .content{
-                    display:block;
-                   margin:0rem 1rem;
-                 }
-                 }
-                 @media screen and (max-width:375px){
-                  .content{
-                    display:block;
-                   margin:0rem 1rem !important;
-                 }
-                 }
-                 @media screen and (max-width:414px){
-                  .content{
-                    display:block;
-                   margin:0rem 0.5rem !important;
-                 }
-                 }
-                 @media screen and (max-width:800px){
-                  .content{                
-                   margin-left:3rem;
-                 }
+                 @media screen and (max-width:568px){
+                    .content section{
+                      width: 95%;               
+                    }
                  }
                  
              </style>

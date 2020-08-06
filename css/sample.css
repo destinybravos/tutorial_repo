@@ -104,3 +104,11 @@ nav .input-group-text{
     color: white;
     border-radius: 0;
 }
+
+#banner{
+    background-image: url('../images/img1.jpg');
+    min-height: 50px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
