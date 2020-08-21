@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 20px;
+    font-size: 30px;
+    background-color: white;
+}
+header img{
+    margin-right: 20px;
+    vertical-align: middle;
+    height: 50px;
+}
+
+#top_menu{
+    background-color: darkslategrey;
+    color: white;
+    text-align: right;
+}
+#top_menu a{
+    color: white;
+    padding: 6px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+#banner{
+    height: 450px;
+    background-color: darkviolet;
+    background-image: url('../images/services.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#card-container{
+    text-align: center;
+}
+#card-container aside{
+    display: inline-block;
+    background-color: gainsboro;
+    width: 300px;
+    height: 200px;
+    margin: 20px 40px;
+
+}
